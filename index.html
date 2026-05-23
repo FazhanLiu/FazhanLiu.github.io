@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人科技感自我介绍</title>
+    <meta
+      name="description"
+      content="一个富有科技感的个人自我介绍网站模板，适合展示能力、经历、项目与联系方式。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-field" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark">LX</span>
+        <span>Future Profile</span>
+      </a>
+      <nav class="nav-links" aria-label="页面导航">
+        <a href="#about">定位</a>
+        <a href="#skills">能力</a>
+        <a href="#projects">项目</a>
+        <a href="#timeline">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal Operating System / 2026</p>
+          <h1>你好，我是 <span>你的名字</span>，专注把复杂问题变成可靠产品。</h1>
+          <p class="hero-text">
+            这里是一份可定制的个人介绍模板。你可以把它改成工程师、设计师、产品经理、研究者或创业者画像，用项目、能力与方法论建立可信赖的第一印象。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#projects">查看项目</a>
+            <a class="secondary-action" href="#contact">取得联系</a>
+          </div>
+        </div>
+
+        <div class="hero-console" aria-label="个人状态面板">
+          <div class="console-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="console-body">
+            <p><b>role</b> = "Full-stack Creator"</p>
+            <p><b>focus</b> = ["AI", "Web", "Product"]</p>
+            <p><b>mode</b> = "Build, measure, refine"</p>
+            <p><b>status</b> = <span class="pulse">Available for collaboration</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-grid">
+        <div class="section-title">
+          <p class="eyebrow">Identity Matrix</p>
+          <h2>从多个维度介绍自己</h2>
+        </div>
+        <div class="dimension-grid">
+          <article>
+            <span>01</span>
+            <h3>专业定位</h3>
+            <p>用一句话说明你的职业身份、擅长领域与目前关注的方向，例如 AI 应用开发、前端工程、数据分析或品牌设计。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>核心优势</h3>
+            <p>突出你与他人不同的组合能力，比如技术实现、产品判断、沟通协作、快速学习或跨领域整合能力。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>工作方式</h3>
+            <p>描述你如何拆解问题、推进项目、验证结果，并说明你对质量、效率和用户体验的标准。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>长期目标</h3>
+            <p>展示你正在积累的方向，让访问者理解你希望参与什么样的机会、团队或产品。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <div class="section-title">
+          <p class="eyebrow">Capability Stack</p>
+          <h2>能力栈</h2>
+        </div>
+        <div class="skill-board">
+          <div class="skill-panel">
+            <h3>技术实现</h3>
+            <ul>
+              <li><span style="--value: 92%"></span>Web 应用开发</li>
+              <li><span style="--value: 86%"></span>AI 工具集成</li>
+              <li><span style="--value: 82%"></span>数据可视化</li>
+            </ul>
+          </div>
+          <div class="skill-panel">
+            <h3>产品与协作</h3>
+            <ul>
+              <li><span style="--value: 90%"></span>需求拆解</li>
+              <li><span style="--value: 84%"></span>原型验证</li>
+              <li><span style="--value: 88%"></span>跨团队沟通</li>
+            </ul>
+          </div>
+          <div class="metric-strip">
+            <div><strong>24+</strong><span>项目经验</span></div>
+            <div><strong>6</strong><span>核心技能域</span></div>
+            <div><strong>99%</strong><span>交付意识</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-grid">
+        <div class="section-title">
+          <p class="eyebrow">Selected Missions</p>
+          <h2>代表项目</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-glow"></div>
+            <p>AI Productivity</p>
+            <h3>智能工作流助手</h3>
+            <span>将重复任务自动化，提供数据整理、内容生成与流程提醒能力。</span>
+          </article>
+          <article class="project-card">
+            <div class="project-glow"></div>
+            <p>Data System</p>
+            <h3>实时数据仪表盘</h3>
+            <span>把分散指标汇总为可扫描的业务看板，支持趋势判断与行动追踪。</span>
+          </article>
+          <article class="project-card">
+            <div class="project-glow"></div>
+            <p>Creative Tech</p>
+            <h3>交互式个人品牌页</h3>
+            <span>结合视觉动效、内容结构与响应式布局，建立高辨识度的线上名片。</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="timeline-section">
+        <div class="section-title">
+          <p class="eyebrow">Growth Timeline</p>
+          <h2>成长轨迹</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <time>2024</time>
+            <h3>建立核心技能</h3>
+            <p>系统学习并实践关键技术或专业方法，完成从知识到项目的转化。</p>
+          </article>
+          <article>
+            <time>2025</time>
+            <h3>参与真实项目</h3>
+            <p>承担端到端交付，把需求、设计、实现、反馈串成完整闭环。</p>
+          </article>
+          <article>
+            <time>2026</time>
+            <h3>聚焦高价值方向</h3>
+            <p>围绕 AI、效率工具、数字产品或个人品牌持续迭代，寻找更大的杠杆。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">Open Channel</p>
+          <h2>期待与你连接</h2>
+          <p>把这里替换成你的邮箱、GitHub、LinkedIn、微信或作品集链接。</p>
+        </div>
+        <a class="primary-action" href="mailto:yourname@example.com">yourname@example.com</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 你的名字</span>
+      <span>Designed for a sharper personal signal.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
