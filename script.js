@@ -15,20 +15,20 @@ function resize() {
   canvas.style.height = `${height}px`;
   context.setTransform(ratio, 0, 0, ratio, 0, 0);
 
-  const count = Math.min(90, Math.floor((width * height) / 16000));
+  const count = Math.min(54, Math.floor((width * height) / 26000));
   particles = Array.from({ length: count }, () => ({
     x: Math.random() * width,
     y: Math.random() * height,
-    vx: (Math.random() - 0.5) * 0.45,
-    vy: (Math.random() - 0.5) * 0.45,
-    size: Math.random() * 1.8 + 0.8,
+    vx: (Math.random() - 0.5) * 0.22,
+    vy: (Math.random() - 0.5) * 0.22,
+    size: Math.random() * 1.2 + 0.6,
   }));
 }
 
 function draw() {
   context.clearRect(0, 0, width, height);
-  context.fillStyle = "rgba(84, 229, 255, 0.72)";
-  context.strokeStyle = "rgba(103, 255, 178, 0.14)";
+  context.fillStyle = "rgba(32, 92, 115, 0.42)";
+  context.strokeStyle = "rgba(166, 124, 61, 0.12)";
   context.lineWidth = 1;
 
   particles.forEach((particle, index) => {
@@ -45,8 +45,8 @@ function draw() {
     for (let i = index + 1; i < particles.length; i += 1) {
       const target = particles[i];
       const distance = Math.hypot(particle.x - target.x, particle.y - target.y);
-      if (distance < 138) {
-        context.globalAlpha = 1 - distance / 138;
+      if (distance < 126) {
+        context.globalAlpha = 1 - distance / 126;
         context.beginPath();
         context.moveTo(particle.x, particle.y);
         context.lineTo(target.x, target.y);
