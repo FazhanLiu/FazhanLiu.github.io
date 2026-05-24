@@ -238,6 +238,48 @@ h3 {
   line-height: 1.7;
 }
 
+.education-strip {
+  display: grid;
+  gap: 10px;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.education-item img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  padding: 6px;
+  background: var(--paper-solid);
+  border: 1px solid rgba(28, 31, 36, 0.08);
+  border-radius: 10px;
+}
+
+.education-item strong,
+.education-item span {
+  display: block;
+}
+
+.education-item strong {
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.education-item span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .profile-meta {
   display: flex;
   flex-wrap: wrap;
@@ -256,6 +298,7 @@ h3 {
 .section-grid,
 .skills-section,
 .timeline-section,
+.life-section,
 .contact-section {
   padding: 76px 0;
 }
@@ -286,6 +329,7 @@ h3 {
 .skill-panel,
 .project-card,
 .timeline article,
+.life-grid article,
 .contact-section {
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -311,6 +355,7 @@ h3 {
 .dimension-grid p,
 .project-card span,
 .timeline p,
+.life-grid p,
 .contact-section p {
   color: var(--muted);
   line-height: 1.75;
@@ -429,6 +474,25 @@ h3 {
   font-weight: 700;
 }
 
+.life-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.life-grid article {
+  min-height: 220px;
+  padding: 24px;
+}
+
+.life-grid span {
+  display: inline-flex;
+  margin-bottom: 42px;
+  color: var(--accent);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
 .contact-section {
   display: flex;
   align-items: center;
@@ -457,7 +521,8 @@ footer {
 
   .hero,
   .skill-board,
-  .dimension-grid {
+  .dimension-grid,
+  .life-grid {
     grid-template-columns: 1fr;
   }
 
@@ -496,6 +561,7 @@ footer {
   .section-grid,
   .skills-section,
   .timeline-section,
+  .life-section,
   .contact-section {
     padding: 54px 0;
   }
