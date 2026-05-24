@@ -65,7 +65,9 @@ a {
 }
 
 .brand,
-.nav-links {
+.nav-links,
+.header-actions,
+.language-switch {
   display: flex;
   align-items: center;
 }
@@ -95,6 +97,11 @@ a {
   font-size: 14px;
 }
 
+.header-actions {
+  justify-content: flex-end;
+  gap: 20px;
+}
+
 .nav-links a {
   border-bottom: 1px solid transparent;
   transition: color 180ms ease, border-color 180ms ease;
@@ -103,6 +110,35 @@ a {
 .nav-links a:hover {
   color: var(--ink);
   border-color: var(--gold);
+}
+
+.language-switch {
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.language-switch a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 0 10px;
+  color: var(--muted);
+  border-radius: 999px;
+  font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: color 180ms ease, background 180ms ease;
+}
+
+.language-switch a:hover,
+.language-switch a.active {
+  color: var(--paper-solid);
+  background: var(--ink);
 }
 
 main {
@@ -588,10 +624,15 @@ footer {
 
 @media (max-width: 900px) {
   .site-header,
+  .header-actions,
   .contact-section,
   footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .header-actions {
+    gap: 14px;
   }
 
   .hero,

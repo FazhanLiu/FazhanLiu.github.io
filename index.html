@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260524-about-layout-v2" />
+    <link rel="stylesheet" href="styles.css?v=20260524-language-switch" />
   </head>
   <body>
     <canvas id="signal-field" aria-hidden="true"></canvas>
@@ -23,15 +23,22 @@
         <span class="brand-mark">LF</span>
         <span>Fazhan Liu</span>
       </a>
-      <nav class="nav-links" aria-label="页面导航">
-        <a href="#about">定位</a>
-        <a href="#skills">能力</a>
-        <a href="#internships">实习</a>
-        <a href="#projects">项目</a>
-        <a href="#timeline">经历</a>
-        <a href="#life">生活</a>
-        <a href="#contact">联系</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="页面导航">
+          <a href="#about">定位</a>
+          <a href="#skills">能力</a>
+          <a href="#internships">实习</a>
+          <a href="#projects">项目</a>
+          <a href="#timeline">经历</a>
+          <a href="#life">生活</a>
+          <a href="#contact">联系</a>
+        </nav>
+        <nav class="language-switch" aria-label="语言切换">
+          <a class="active" href="index.html" aria-current="page">中文</a>
+          <a href="en.html">EN</a>
+          <a href="ja.html">日本語</a>
+        </nav>
+      </div>
     </header>
 
     <main id="top">
@@ -264,9 +271,9 @@
         <div>
           <p class="eyebrow">Contact</p>
           <h2>期待与您共创未来</h2>
-          <p>邮箱：otisliu921@gmail.com · 电话：+86 13614215766</p>
+          <p>邮箱：otisliu921@gmail.com</p>
         </div>
-        <a class="primary-action" href="mailto:1278759627@qq.com">1278759627@qq.com</a>
+        <a class="primary-action" href="mailto:otisliu921@gmail.com">otisliu921@gmail.com</a>
       </section>
     </main>
 
@@ -275,6 +282,6 @@
       <span>Robotics · AI · Software Engineering</span>
     </footer>
 
-    <script src="script.js?v=20260524-about-layout-v2"></script>
+    <script src="script.js?v=20260524-language-switch"></script>
   </body>
 </html>
