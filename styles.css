@@ -212,19 +212,14 @@ h3 {
   backdrop-filter: blur(18px);
 }
 
-.avatar {
-  display: grid;
-  width: 96px;
-  height: 96px;
-  place-items: center;
-  color: var(--paper-solid);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.12), transparent),
-    #202326;
-  border-radius: 50%;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 54% 42%;
+  border: 1px solid rgba(28, 31, 36, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 16px 46px rgba(38, 44, 55, 0.12);
 }
 
 .profile-card h2 {
@@ -297,6 +292,7 @@ h3 {
 
 .section-grid,
 .skills-section,
+.internship-section,
 .timeline-section,
 .life-section,
 .contact-section {
@@ -327,6 +323,7 @@ h3 {
 
 .dimension-grid article,
 .skill-panel,
+.internship-card,
 .project-card,
 .timeline article,
 .life-grid article,
@@ -353,6 +350,7 @@ h3 {
 }
 
 .dimension-grid p,
+.internship-card p,
 .project-card span,
 .timeline p,
 .life-grid p,
@@ -432,6 +430,69 @@ h3 {
 
 .metric-strip span {
   color: var(--muted);
+}
+
+.internship-list {
+  display: grid;
+  gap: 14px;
+}
+
+.internship-card {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 24px;
+}
+
+.company-logo {
+  display: grid;
+  width: 92px;
+  height: 92px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper-solid);
+}
+
+.company-logo img {
+  max-width: 72px;
+  max-height: 56px;
+  object-fit: contain;
+}
+
+.internship-main {
+  display: grid;
+  gap: 12px;
+}
+
+.internship-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.internship-head p {
+  margin-bottom: 6px;
+  color: var(--gold);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.internship-head h3 {
+  margin-bottom: 0;
+}
+
+.internship-head span {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .project-card {
@@ -531,8 +592,13 @@ footer {
   }
 
   .project-card,
+  .internship-card,
   .timeline article {
     grid-template-columns: 1fr;
+  }
+
+  .internship-head {
+    flex-direction: column;
   }
 }
 
@@ -560,6 +626,7 @@ footer {
 
   .section-grid,
   .skills-section,
+  .internship-section,
   .timeline-section,
   .life-section,
   .contact-section {
