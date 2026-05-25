@@ -203,13 +203,13 @@
         </div>
         <div class="project-grid">
           <article class="project-card">
-            <p>ROS · UR5e · Perception</p>
+            <p>RoboCup</p>
             <h3>
               <a href="https://github.com/SuhangXia/robocup_ur5e" target="_blank" rel="noreferrer">
                 RoboCup UR5e Object Sorting System
               </a>
             </h3>
-            <span>King's College London 机器人团队项目，面向 RoboCup 竞赛构建 UR5e 自主物体分拣系统。我负责 perception 中的 <code>perception_yolo</code> 部分，参与 YOLOv8 目标检测、YCB 物体分类、颜色识别、3D 定位与分数分配，为后续抓取估计和运动规划提供感知输入。</span>
+            <span>项目整体 pipeline 由有限状态机调度任务流程：系统先搜索并检测桌面 YCB 物体，完成类别、颜色和分数判断，再结合 3D 定位与抓取估计生成抓取候选，随后交给路径规划与 UR5e 运动控制模块完成避障轨迹、抓取和按颜色分拣。我负责 perception 中的 <code>perception_yolo</code> 部分，使用 YOLOv26 完成目标检测、YCB 物体分类、颜色识别、3D 定位与 score assignment，为 GraspNet、MoveIt 和后续执行模块提供稳定的感知输入。</span>
           </article>
           <article class="project-card">
             <p>Graph Neural Network</p>
