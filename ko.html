@@ -9,6 +9,7 @@
       content="Fazhan Liu의 포트폴리오. 학력, 인턴십, AI·로보틱스 프로젝트, 기술 역량, 사진 작품과 연락처를 소개합니다."
     />
     <script src="theme.js?v=20261016-four-languages"></script>
+    <script src="layout.js?v=20261016-layout"></script>
     <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20261016-four-languages" />
+    <link rel="stylesheet" href="styles.css?v=20261016-layout" />
   </head>
   <body>
     <canvas id="signal-field" aria-hidden="true"></canvas>
@@ -25,8 +26,11 @@
         <span class="brand-mark">LF</span>
         <span>Fazhan Liu</span>
       </a>
+      <button class="menu-toggle" type="button" aria-label="탐색 메뉴" aria-expanded="false" aria-controls="page-navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
       <div class="header-actions">
-        <nav class="nav-links" aria-label="페이지 탐색">
+        <nav id="page-navigation" class="nav-links" aria-label="페이지 탐색">
           <a href="#about">소개</a>
           <a href="#skills">기술</a>
           <a href="#internships">인턴십</a>
@@ -36,6 +40,10 @@
           <a href="#photography">사진</a>
           <a href="#contact">연락처</a>
         </nav>
+        <button class="layout-toggle" type="button" aria-label="모바일 보기로 전환" aria-pressed="false">
+          <span class="layout-toggle-icon" aria-hidden="true">▯</span>
+          <span class="layout-toggle-label">모바일 보기</span>
+        </button>
         <button class="theme-toggle" type="button" aria-label="다크 모드로 전환" aria-pressed="false">
           <span class="theme-toggle-icon" aria-hidden="true">☾</span>
           <span class="theme-toggle-label">다크 모드</span>

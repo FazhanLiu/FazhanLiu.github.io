@@ -9,6 +9,7 @@
       content="Fazhan Liu’s portfolio: education, internships, AI and robotics projects, technical skills, photography, and contact details."
     />
     <script src="theme.js?v=20261016-four-languages"></script>
+    <script src="layout.js?v=20261016-layout"></script>
     <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20261016-four-languages" />
+    <link rel="stylesheet" href="styles.css?v=20261016-layout" />
   </head>
   <body>
     <canvas id="signal-field" aria-hidden="true"></canvas>
@@ -25,8 +26,11 @@
         <span class="brand-mark">LF</span>
         <span>Fazhan Liu</span>
       </a>
+      <button class="menu-toggle" type="button" aria-label="Navigation menu" aria-expanded="false" aria-controls="page-navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
       <div class="header-actions">
-        <nav class="nav-links" aria-label="Page navigation">
+        <nav id="page-navigation" class="nav-links" aria-label="Page navigation">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#internships">Internships</a>
@@ -36,6 +40,10 @@
           <a href="#photography">Photography</a>
           <a href="#contact">Contact</a>
         </nav>
+        <button class="layout-toggle" type="button" aria-label="Switch to mobile layout" aria-pressed="false">
+          <span class="layout-toggle-icon" aria-hidden="true">▯</span>
+          <span class="layout-toggle-label">Mobile layout</span>
+        </button>
         <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
           <span class="theme-toggle-icon" aria-hidden="true">☾</span>
           <span class="theme-toggle-label">Dark mode</span>
