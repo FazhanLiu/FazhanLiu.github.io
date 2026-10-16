@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazhan Liu | Personal Website</title>
+    <meta
+      name="description"
+      content="Fazhan Liu’s portfolio: education, internships, AI and robotics projects, technical skills, photography, and contact details."
+    />
+    <script src="theme.js?v=20261016-four-languages"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20261016-four-languages" />
+  </head>
+  <body>
+    <canvas id="signal-field" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">LF</span>
+        <span>Fazhan Liu</span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="Page navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#internships">Internships</a>
+          <a href="#projects">Projects</a>
+          <a href="#timeline">Education</a>
+          <a href="#life">Life</a>
+          <a href="#photography">Photography</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+          <span class="theme-toggle-label">Dark mode</span>
+        </button>
+        <nav class="language-switch" aria-label="Language selection">
+          <a href="index.html" lang="zh-CN">中文</a>
+          <a class="active" href="en.html" aria-current="page" lang="en">EN</a>
+          <a href="ja.html" lang="ja">日本語</a>
+          <a href="ko.html" lang="ko">한국어</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio / 2026</p>
+          <h1>Fazhan Liu</h1>
+          <p class="hero-role">Robotics MSc · AI Algorithm · Software Engineering</p>
+          <p class="hero-text">
+            MSc Robotics student at King’s College London, with an undergraduate background in Software Engineering and English from Dalian Jiaotong University. My interests include robotic perception, computer vision, graph neural networks, and digital human data pipelines, supported by hands-on Android, frontend, and AI project experience.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#projects">Projects</a>
+            <a class="secondary-action" href="#internships">Internships</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile overview">
+          <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Fazhan Liu" />
+          <div>
+            <h2>Fazhan Liu</h2>
+            <p>London · Dalian · Robotics & AI</p>
+          </div>
+          <div class="education-strip" aria-label="Education">
+            <article class="education-item">
+              <img
+                src="https://www.urongda.com/images/normal/medium/dalian-jiaotong-university-logo-1024px.png"
+                alt="Dalian Jiaotong University logo"
+              />
+              <div>
+                <strong>Dalian Jiaotong University</strong>
+                <span>Undergraduate · Software Engineering &amp; English · 2020–2025</span>
+              </div>
+            </article>
+            <article class="education-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/14/King%27s_College_London_logo.svg"
+                alt="King's College London logo"
+              />
+              <div>
+                <strong>King's College London</strong>
+                <span>MSc · Robotics · 2025–2026</span>
+              </div>
+            </article>
+          </div>
+          <div class="profile-meta">
+            <span>Computer Vision</span>
+            <span>Robotics</span>
+            <span>Android</span>
+            <span>Multilingual</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section-grid">
+        <div class="section-title">
+          <p class="eyebrow">About</p>
+          <h2>A little about me</h2>
+        </div>
+        <div class="dimension-grid">
+          <article>
+            <span>01</span>
+            <h3>Focus</h3>
+            <p>A robotics and AI student with a software engineering background, focused on visual perception, action recognition, graph neural networks, and digital human technology.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Strengths</h3>
+            <p>Combining English and software engineering, I connect algorithms, implementation, and clear communication across languages and technical disciplines.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>How I work</h3>
+            <p>I work from data pipelines and model training through evaluation and delivery, with an emphasis on reproducibility and clear presentation.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Looking ahead</h3>
+            <p>I aim to turn research into reliable applications in robotic perception, computer vision, intelligent interaction, and AI products.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <div class="section-title">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical skills</h2>
+        </div>
+        <div class="skill-board">
+          <div class="skill-panel">
+            <h3>Programming &amp; Engineering</h3>
+            <ul>
+              <li><span style="--value: 88%"></span>Java / Android / Gradle</li>
+              <li><span style="--value: 84%"></span>HTML / CSS / JavaScript / Vue</li>
+              <li><span style="--value: 78%"></span>Python / FastAPI / SQLite / C</li>
+            </ul>
+          </div>
+          <div class="skill-panel">
+            <h3>AI &amp; Languages</h3>
+            <ul>
+              <li><span style="--value: 86%"></span>YOLO / GNN / C3D / Wav2Lip</li>
+              <li><span style="--value: 82%"></span>RAG / BGE / ChromaDB / DeepSeek</li>
+              <li><span style="--value: 92%"></span>English: CET-4/6 · TEM-4/8 · IELTS 7.0</li>
+            </ul>
+          </div>
+          <div class="metric-strip">
+            <div><strong>Top 10%</strong><span>Undergraduate class rank</span></div>
+            <div><strong>85.5</strong><span>GPA</span></div>
+            <div><strong>5</strong><span>Core AI projects</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="internships" class="internship-section">
+        <div class="section-title">
+          <p class="eyebrow">Internships</p>
+          <h2>Internship experience</h2>
+        </div>
+        <div class="internship-list">
+          <article class="internship-card">
+            <div class="company-logo">
+              <img src="https://www.alpine.com.cn/static/alpine/assets/images/logo.png" alt="Alpine logo" />
+            </div>
+            <div class="internship-main">
+              <div class="internship-head">
+                <div>
+                  <p>2024.08 - 2024.10</p>
+                  <h3>Alpine Electronics (China) · Dalian R&amp;D Center</h3>
+                </div>
+                <span>Dalian · Android Developer</span>
+              </div>
+              <p>
+                Built an Android music player with Java and Gradle, including registration, login, playback, and favorites. Used SQLite for local storage and XML for layouts, and tested user interactions.
+              </p>
+            </div>
+          </article>
+          <article class="internship-card">
+            <div class="company-logo">
+              <img
+                src="https://www.bangyan.com.cn/assets/bangyan-logo.svg"
+                alt="Bangyan Technology logo"
+                onerror="this.hidden = true; this.nextElementSibling.hidden = false;"
+              />
+              <span class="company-logo-fallback" hidden>Bangyan</span>
+            </div>
+            <div class="internship-main">
+              <div class="internship-head">
+                <div>
+                  <p>2025.04 - 2025.09</p>
+                  <h3>Bangyan Technology Co., Ltd.</h3>
+                </div>
+                <span>Shenzhen · Algorithm Engineer</span>
+              </div>
+              <p>
+                Built digital human training data pipelines from public video datasets. Used UVR5 to separate vocals from background music and YOLO for face detection and filtering, then deployed the data to servers for Wav2Lip lip-sync training.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section-grid">
+        <div class="section-title">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p>RAG &amp; Agent</p>
+            <h3>Enterprise Product Q&amp;A Agent</h3>
+            <span>Built a Python/FastAPI assistant for company websites, showrooms, and presales support. PDF extraction and chunking feed BGE embeddings, persistent Chroma storage, Top-5 retrieval, and CrossEncoder reranking; DeepSeek generates Chinese answers with file and page citations. Intent routing supports product questions, quote/demo lead capture with consent and SQLite storage, and human handoff recommendations for contract questions. Includes document persistence, deduplication, Chinese text extraction fixes, and CSV intent evaluation.</span>
+          </article>
+          <article class="project-card">
+            <p>RoboCup</p>
+            <h3>
+              <a href="https://github.com/SuhangXia/robocup_ur5e" target="_blank" rel="noreferrer">
+                RoboCup UR5e Object Sorting System
+              </a>
+            </h3>
+            <span>A finite-state-machine pipeline detects tabletop YCB objects, estimates 3D positions and grasps, and coordinates collision-aware planning and UR5e control for color-based sorting. I developed <code>perception_yolo</code>, using YOLOv26 for detection, YCB classification, color recognition, 3D localization, and score assignment, supplying perception inputs to GraspNet, MoveIt, and execution modules.</span>
+          </article>
+          <article class="project-card">
+            <p>Graph Neural Network</p>
+            <h3>Sketch Recognition</h3>
+            <span>Developed GNN-based sketch recognition on QuickDraw, contributing to feasibility analysis, model training, demonstrations, and the final presentation. The work was published at ICAIC 2024.</span>
+          </article>
+          <article class="project-card">
+            <p>Computer Vision</p>
+            <h3>Object Detection</h3>
+            <span>Led a computer vision project using Python and YOLO for object detection, accuracy evaluation, and the final demonstration.</span>
+          </article>
+          <article class="project-card">
+            <p>Robotics Perception</p>
+            <h3>Perception for Collaborative Robots</h3>
+            <span>Built a 30-class video classification task for industrial action recognition. Developed C3D_Lite_V2 from C3D_Lite, adding attention and a multi-layer classification head to improve performance.</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="timeline-section">
+        <div class="section-title">
+          <p class="eyebrow">Education & Awards</p>
+          <h2>Education &amp; awards</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <time>2020-2025</time>
+            <h3>Dalian Jiaotong University</h3>
+            <p>Undergraduate studies in Software Engineering and English. Top 10% of the class, GPA 85.5; awarded first- and third-class university scholarships.</p>
+          </article>
+          <article>
+            <time>2025-2026</time>
+            <h3>King’s College London (KCL)</h3>
+            <p>MSc Robotics, focusing on robotic perception, intelligent systems, and AI algorithms.</p>
+          </article>
+          <article>
+            <time>Awards</time>
+            <h3>Awards &amp; recommendations</h3>
+            <p>Provincial Silver Award at the 9th Liaoning “Internet+” Innovation and Entrepreneurship Competition; provincial Excellence Award at the Liaoning iTeach Digital Education Innovation Competition. Received recommendation letters from professors at the Chinese Academy of Sciences and HKUST.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="life" class="life-section">
+        <div class="section-title">
+          <p class="eyebrow">Life</p>
+          <h2>Life beyond work</h2>
+        </div>
+        <div class="life-grid">
+          <article>
+            <span>01</span>
+            <h3>From Dalian to London</h3>
+            <p>From studying Software Engineering and English in Dalian to pursuing robotics in London, I continue learning and exploring across cultures.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Language &amp; communication</h3>
+            <p>My English studies and IELTS 7.0 help me communicate technical ideas clearly, collaborate with teams, and work across languages.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Beyond technology</h3>
+            <p>I enjoy observing cities and documenting everyday life, making room for creativity, self-expression, and steady growth alongside engineering.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="photography" class="photography-section" aria-labelledby="photography-title">
+        <div class="section-title">
+          <p class="eyebrow">Photography</p>
+          <h2 id="photography-title">Photography gallery</h2>
+        </div>
+        <div class="gallery-toolbar">
+          <p>Light, places, and everyday moments through my lens.</p>
+          <button class="secondary-action gallery-toggle" type="button" aria-pressed="false">Pause slideshow</button>
+        </div>
+        <div class="gallery-viewport" tabindex="0" role="region" aria-label="Photo carousel. Hover or focus to slow down and pause; swipe horizontally to browse.">
+          <div class="gallery-track"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something together</h2>
+          <p>Email: otisliu921@gmail.com</p>
+        </div>
+        <a class="primary-action" href="mailto:otisliu921@gmail.com">otisliu921@gmail.com</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Fazhan Liu</span>
+      <span>Robotics · AI · Software Engineering</span>
+    </footer>
+
+    <script src="script.js?v=20261016-four-languages"></script>
+  </body>
+</html>

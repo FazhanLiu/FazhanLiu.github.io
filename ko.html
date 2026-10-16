@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazhan Liu | 포트폴리오</title>
+    <meta
+      name="description"
+      content="Fazhan Liu의 포트폴리오. 학력, 인턴십, AI·로보틱스 프로젝트, 기술 역량, 사진 작품과 연락처를 소개합니다."
+    />
+    <script src="theme.js?v=20261016-four-languages"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20261016-four-languages" />
+  </head>
+  <body>
+    <canvas id="signal-field" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="맨 위로">
+        <span class="brand-mark">LF</span>
+        <span>Fazhan Liu</span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="페이지 탐색">
+          <a href="#about">소개</a>
+          <a href="#skills">기술</a>
+          <a href="#internships">인턴십</a>
+          <a href="#projects">프로젝트</a>
+          <a href="#timeline">학력</a>
+          <a href="#life">일상</a>
+          <a href="#photography">사진</a>
+          <a href="#contact">연락처</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="다크 모드로 전환" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+          <span class="theme-toggle-label">다크 모드</span>
+        </button>
+        <nav class="language-switch" aria-label="언어 선택">
+          <a href="index.html" lang="zh-CN">中文</a>
+          <a href="en.html" lang="en">EN</a>
+          <a href="ja.html" lang="ja">日本語</a>
+          <a class="active" href="ko.html" aria-current="page" lang="ko">한국어</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio / 2026</p>
+          <h1>Fazhan Liu</h1>
+          <p class="hero-role">Robotics MSc · AI Algorithm · Software Engineering</p>
+          <p class="hero-text">
+            킹스 칼리지 런던에서 로보틱스 석사 과정을 공부하고 있으며, 다롄교통대학교에서 소프트웨어 공학과 영어를 전공했습니다. 로봇 지각, 컴퓨터 비전, 그래프 신경망, 디지털 휴먼 데이터 처리에 관심이 있으며 Android, 프런트엔드, AI 알고리즘 프로젝트 경험이 있습니다.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#projects">Projects</a>
+            <a class="secondary-action" href="#internships">Internships</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="프로필">
+          <img class="profile-photo" src="assets/profile.jpg" alt="Fazhan Liu의 프로필 사진" />
+          <div>
+            <h2>Fazhan Liu</h2>
+            <p>London · Dalian · Robotics & AI</p>
+          </div>
+          <div class="education-strip" aria-label="학력">
+            <article class="education-item">
+              <img
+                src="https://www.urongda.com/images/normal/medium/dalian-jiaotong-university-logo-1024px.png"
+                alt="다롄교통대학교 로고"
+              />
+              <div>
+                <strong>다롄교통대학교</strong>
+                <span>학부 · 소프트웨어 공학·영어 · 2020–2025</span>
+              </div>
+            </article>
+            <article class="education-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/14/King%27s_College_London_logo.svg"
+                alt="King's College London logo"
+              />
+              <div>
+                <strong>King's College London</strong>
+                <span>석사 · 로보틱스 · 2025–2026</span>
+              </div>
+            </article>
+          </div>
+          <div class="profile-meta">
+            <span>Computer Vision</span>
+            <span>Robotics</span>
+            <span>Android</span>
+            <span>Multilingual</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section-grid">
+        <div class="section-title">
+          <p class="eyebrow">About</p>
+          <h2>저를 소개합니다</h2>
+        </div>
+        <div class="dimension-grid">
+          <article>
+            <span>01</span>
+            <h3>전문 분야</h3>
+            <p>소프트웨어 공학을 바탕으로 로보틱스와 AI를 공부하며, 시각 인식, 동작 인식, 그래프 신경망, 디지털 휴먼 기술에 집중하고 있습니다.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>강점</h3>
+            <p>영어와 소프트웨어 공학을 함께 공부한 경험을 바탕으로 언어와 기술 분야를 넘나들며 요구사항을 이해하고, 알고리즘과 구현, 결과 전달을 연결합니다.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>일하는 방식</h3>
+            <p>데이터 처리, 모델 학습, 평가, 발표·납품의 순서로 프로젝트를 진행하며, 재현성과 명확한 결과 전달을 중요하게 생각합니다.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>앞으로의 목표</h3>
+            <p>로봇 지각, 컴퓨터 비전, 지능형 상호작용, AI 제품 분야에서 경험을 쌓고 연구 성과를 신뢰할 수 있는 서비스로 발전시키고자 합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <div class="section-title">
+          <p class="eyebrow">Skills</p>
+          <h2>기술 역량</h2>
+        </div>
+        <div class="skill-board">
+          <div class="skill-panel">
+            <h3>프로그래밍·개발</h3>
+            <ul>
+              <li><span style="--value: 88%"></span>Java / Android / Gradle</li>
+              <li><span style="--value: 84%"></span>HTML / CSS / JavaScript / Vue</li>
+              <li><span style="--value: 78%"></span>Python / FastAPI / SQLite / C</li>
+            </ul>
+          </div>
+          <div class="skill-panel">
+            <h3>AI·언어 능력</h3>
+            <ul>
+              <li><span style="--value: 86%"></span>YOLO / GNN / C3D / Wav2Lip</li>
+              <li><span style="--value: 82%"></span>RAG / BGE / ChromaDB / DeepSeek</li>
+              <li><span style="--value: 92%"></span>영어 CET-4/6 · TEM-4/8 · IELTS 7.0</li>
+            </ul>
+          </div>
+          <div class="metric-strip">
+            <div><strong>Top 10%</strong><span>학부 전공 내 순위</span></div>
+            <div><strong>85.5</strong><span>GPA</span></div>
+            <div><strong>5</strong><span>주요 AI 프로젝트</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="internships" class="internship-section">
+        <div class="section-title">
+          <p class="eyebrow">Internships</p>
+          <h2>인턴십 경험</h2>
+        </div>
+        <div class="internship-list">
+          <article class="internship-card">
+            <div class="company-logo">
+              <img src="https://www.alpine.com.cn/static/alpine/assets/images/logo.png" alt="Alpine logo" />
+            </div>
+            <div class="internship-main">
+              <div class="internship-head">
+                <div>
+                  <p>2024.08 - 2024.10</p>
+                  <h3>Alpine Electronics (China) · 다롄 R&amp;D 센터</h3>
+                </div>
+                <span>다롄 · Android 개발 엔지니어</span>
+              </div>
+              <p>
+                Java와 Gradle로 음악 플레이어를 개발하고 회원가입, 로그인, 음악 재생, 즐겨찾기 기능을 구현했습니다. SQLite로 로컬 데이터를 관리하고 XML 기반 화면 구성과 사용자 상호작용 테스트를 담당했습니다.
+              </p>
+            </div>
+          </article>
+          <article class="internship-card">
+            <div class="company-logo">
+              <img
+                src="https://www.bangyan.com.cn/assets/bangyan-logo.svg"
+                alt="Bangyan Technology 로고"
+                onerror="this.hidden = true; this.nextElementSibling.hidden = false;"
+              />
+              <span class="company-logo-fallback" hidden>Bangyan</span>
+            </div>
+            <div class="internship-main">
+              <div class="internship-head">
+                <div>
+                  <p>2025.04 - 2025.09</p>
+                  <h3>Bangyan Technology Co., Ltd.</h3>
+                </div>
+                <span>선전 · 알고리즘 엔지니어</span>
+              </div>
+              <p>
+                공개 영상 데이터셋을 활용해 디지털 휴먼 학습용 데이터 파이프라인을 구축했습니다. UVR5로 음성과 배경음악을 분리하고 YOLO로 얼굴 검출 및 데이터 선별을 수행한 뒤, Wav2Lip 립싱크 학습을 위해 서버에 배포했습니다.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section-grid">
+        <div class="section-title">
+          <p class="eyebrow">Projects</p>
+          <h2>주요 프로젝트</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p>RAG &amp; Agent</p>
+            <h3>기업 제품 안내 AI 에이전트</h3>
+            <span>기업 웹사이트, 전시장, 구매 전 상담을 위한 Python·FastAPI·DeepSeek 기반 제품 Q&amp;A 도우미입니다. PDF 추출·분할, BGE 임베딩, Chroma 영구 저장, 상위 5개 검색과 CrossEncoder 재순위화를 거쳐 파일명·페이지 출처가 포함된 중국어 답변을 생성합니다. 의도 분류로 제품 질문, 견적·데모 예약 시 연락처 수집, 계약 문의의 담당자 연결 안내를 처리합니다. 고객 동의 후 SQLite에 연락처를 저장하며, 문서 자동 로드, 중복 제거, 중국어 추출 오류 처리, CSV 기반 의도 평가도 지원합니다.</span>
+          </article>
+          <article class="project-card">
+            <p>RoboCup</p>
+            <h3>
+              <a href="https://github.com/SuhangXia/robocup_ur5e" target="_blank" rel="noreferrer">
+                RoboCup UR5e Object Sorting System
+              </a>
+            </h3>
+            <span>유한 상태 머신으로 탁상 위 YCB 물체 검출, 3D 위치·파지 추정, 장애물 회피 경로 계획과 UR5e 제어를 연결해 색상별 분류를 수행하는 시스템입니다. 저는 <code>perception_yolo</code>를 담당해 YOLOv26 기반 검출, YCB 분류, 색상 인식, 3D 위치 추정, 점수 할당을 구현하고 GraspNet, MoveIt 및 실행 모듈에 지각 정보를 제공했습니다.</span>
+          </article>
+          <article class="project-card">
+            <p>Graph Neural Network</p>
+            <h3>스케치 인식</h3>
+            <span>QuickDraw 데이터셋으로 GNN 기반 스케치 인식을 개발했습니다. 타당성 분석, 모델 학습, 데모와 최종 발표에 참여했으며, 연구 결과는 ICAIC 2024에 발표되었습니다.</span>
+          </article>
+          <article class="project-card">
+            <p>Computer Vision</p>
+            <h3>객체 검출</h3>
+            <span>팀장으로서 Python과 YOLO 기반 컴퓨터 비전 프로젝트를 이끌며 객체 인식, 정확도 평가와 최종 시연을 수행했습니다.</span>
+          </article>
+          <article class="project-card">
+            <p>Robotics Perception</p>
+            <h3>제조업 협동 로봇의 지각 알고리즘</h3>
+            <span>산업 동작 인식을 위한 30개 클래스의 영상 분류 과제를 구성했습니다. C3D_Lite를 기반으로 C3D_Lite_V2를 개발하고 어텐션과 다층 분류 헤드를 도입해 성능 개선을 추진했습니다.</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="timeline-section">
+        <div class="section-title">
+          <p class="eyebrow">Education & Awards</p>
+          <h2>학력·수상 이력</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <time>2020-2025</time>
+            <h3>다롄교통대학교</h3>
+            <p>소프트웨어 공학·영어 전공. 전공 내 상위 10%, GPA 85.5이며 교내 1등급·3등급 장학금을 받았습니다.</p>
+          </article>
+          <article>
+            <time>2025-2026</time>
+            <h3>킹스 칼리지 런던 (KCL)</h3>
+            <p>로보틱스 석사 과정. 로봇 지각, 지능형 시스템, AI 알고리즘을 중심으로 공부하고 있습니다.</p>
+          </article>
+          <article>
+            <time>Awards</time>
+            <h3>수상·추천</h3>
+            <p>제9회 랴오닝성 “인터넷+” 대학생 혁신·창업 경진대회 성급 은상, 랴오닝성 iTeach 디지털 교육 응용 혁신 경진대회 성급 우수상을 수상했습니다. 중국과학원 및 홍콩과학기술대학교 교수의 추천서를 받았습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="life" class="life-section">
+        <div class="section-title">
+          <p class="eyebrow">Life</p>
+          <h2>일상의 순간</h2>
+        </div>
+        <div class="life-grid">
+          <article>
+            <span>01</span>
+            <h3>다롄에서 런던으로</h3>
+            <p>다롄에서 소프트웨어 공학과 영어를 공부한 뒤 런던에서 로보틱스를 배우고 있습니다. 다양한 문화 속에서 배움과 탐구를 이어갑니다.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>언어와 소통</h3>
+            <p>영어 전공과 IELTS 7.0의 언어 역량을 바탕으로 기술을 명확하게 설명하고, 팀 협업과 언어를 넘는 소통을 중요하게 생각합니다.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>기술 너머</h3>
+            <p>도시를 관찰하고 일상을 기록하는 것을 좋아합니다. 공학을 공부하면서도 감각과 표현, 꾸준한 성장을 위한 여유를 지키고자 합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="photography" class="photography-section" aria-labelledby="photography-title">
+        <div class="section-title">
+          <p class="eyebrow">Photography</p>
+          <h2 id="photography-title">사진 갤러리</h2>
+        </div>
+        <div class="gallery-toolbar">
+          <p>여행길의 빛과 그림자, 일상의 순간을 담습니다.</p>
+          <button class="secondary-action gallery-toggle" type="button" aria-pressed="false">슬라이드 일시정지</button>
+        </div>
+        <div class="gallery-viewport" tabindex="0" role="region" aria-label="사진 슬라이드. 마우스를 올리거나 포커스하면 서서히 멈춥니다. 좌우로 스와이프해 둘러볼 수 있습니다.">
+          <div class="gallery-track"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>함께 새로운 것을 만들어 가요</h2>
+          <p>이메일: otisliu921@gmail.com</p>
+        </div>
+        <a class="primary-action" href="mailto:otisliu921@gmail.com">otisliu921@gmail.com</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Fazhan Liu</span>
+      <span>Robotics · AI · Software Engineering</span>
+    </footer>
+
+    <script src="script.js?v=20261016-four-languages"></script>
+  </body>
+</html>

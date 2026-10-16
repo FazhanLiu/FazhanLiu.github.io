@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>劉発展（Fazhan Liu）| ポートフォリオ</title>
+    <meta
+      name="description"
+      content="劉発展のポートフォリオ。学歴、インターンシップ、AI・ロボティクスのプロジェクト、技術スキル、写真作品、連絡先を紹介します。"
+    />
+    <script src="theme.js?v=20261016-four-languages"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/site-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20261016-four-languages" />
+  </head>
+  <body>
+    <canvas id="signal-field" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ページ上部へ">
+        <span class="brand-mark">LF</span>
+        <span>Fazhan Liu</span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="ページ内ナビゲーション">
+          <a href="#about">自己紹介</a>
+          <a href="#skills">スキル</a>
+          <a href="#internships">インターン</a>
+          <a href="#projects">プロジェクト</a>
+          <a href="#timeline">学歴</a>
+          <a href="#life">日常</a>
+          <a href="#photography">写真</a>
+          <a href="#contact">お問い合わせ</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="ダークモードに切り替え" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+          <span class="theme-toggle-label">ダークモード</span>
+        </button>
+        <nav class="language-switch" aria-label="言語選択">
+          <a href="index.html" lang="zh-CN">中文</a>
+          <a href="en.html" lang="en">EN</a>
+          <a class="active" href="ja.html" aria-current="page" lang="ja">日本語</a>
+          <a href="ko.html" lang="ko">한국어</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio / 2026</p>
+          <h1>Fazhan Liu</h1>
+          <p class="hero-role">Robotics MSc · AI Algorithm · Software Engineering</p>
+          <p class="hero-text">
+            キングス・カレッジ・ロンドンでロボティクスを学ぶ修士課程の学生です。大連交通大学ではソフトウェア工学と英語を専攻しました。ロボットの知覚、コンピュータビジョン、グラフニューラルネットワーク、デジタルヒューマンのデータ処理に関心があり、Android、フロントエンド、AIアルゴリズムの開発経験があります。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#projects">Projects</a>
+            <a class="secondary-action" href="#internships">Internships</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="プロフィール">
+          <img class="profile-photo" src="assets/profile.jpg" alt="劉発展のプロフィール写真" />
+          <div>
+            <h2>劉発展</h2>
+            <p>London · Dalian · Robotics & AI</p>
+          </div>
+          <div class="education-strip" aria-label="学歴">
+            <article class="education-item">
+              <img
+                src="https://www.urongda.com/images/normal/medium/dalian-jiaotong-university-logo-1024px.png"
+                alt="大連交通大学のロゴ"
+              />
+              <div>
+                <strong>大連交通大学</strong>
+                <span>学士課程 · ソフトウェア工学・英語 · 2020–2025</span>
+              </div>
+            </article>
+            <article class="education-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/14/King%27s_College_London_logo.svg"
+                alt="King's College London logo"
+              />
+              <div>
+                <strong>King's College London</strong>
+                <span>修士課程 · ロボティクス · 2025–2026</span>
+              </div>
+            </article>
+          </div>
+          <div class="profile-meta">
+            <span>Computer Vision</span>
+            <span>Robotics</span>
+            <span>Android</span>
+            <span>Multilingual</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section-grid">
+        <div class="section-title">
+          <p class="eyebrow">About</p>
+          <h2>私について</h2>
+        </div>
+        <div class="dimension-grid">
+          <article>
+            <span>01</span>
+            <h3>専門分野</h3>
+            <p>ソフトウェア工学を基盤にロボティクスとAIを学び、視覚認識、動作認識、グラフニューラルネットワーク、デジタルヒューマン技術に取り組んでいます。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>強み</h3>
+            <p>英語とソフトウェア工学の両方を学んだ経験を生かし、言語や専門分野を越えて要件を理解し、アルゴリズムから実装、成果の説明までつなげます。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>取り組み方</h3>
+            <p>データ処理、モデル学習、評価、発表・納品の順にプロジェクトを進め、再現性と分かりやすい成果の共有を重視しています。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>今後の目標</h3>
+            <p>ロボットの知覚、コンピュータビジョン、インタラクション、AI製品の分野で経験を積み、研究を信頼できるアプリケーションへ発展させたいと考えています。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <div class="section-title">
+          <p class="eyebrow">Skills</p>
+          <h2>技術スキル</h2>
+        </div>
+        <div class="skill-board">
+          <div class="skill-panel">
+            <h3>プログラミング・開発</h3>
+            <ul>
+              <li><span style="--value: 88%"></span>Java / Android / Gradle</li>
+              <li><span style="--value: 84%"></span>HTML / CSS / JavaScript / Vue</li>
+              <li><span style="--value: 78%"></span>Python / FastAPI / SQLite / C</li>
+            </ul>
+          </div>
+          <div class="skill-panel">
+            <h3>AI・語学</h3>
+            <ul>
+              <li><span style="--value: 86%"></span>YOLO / GNN / C3D / Wav2Lip</li>
+              <li><span style="--value: 82%"></span>RAG / BGE / ChromaDB / DeepSeek</li>
+              <li><span style="--value: 92%"></span>英語 CET-4/6 · TEM-4/8 · IELTS 7.0</li>
+            </ul>
+          </div>
+          <div class="metric-strip">
+            <div><strong>Top 10%</strong><span>学部での専攻内順位</span></div>
+            <div><strong>85.5</strong><span>GPA</span></div>
+            <div><strong>5</strong><span>主なAIプロジェクト</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="internships" class="internship-section">
+        <div class="section-title">
+          <p class="eyebrow">Internships</p>
+          <h2>インターンシップ</h2>
+        </div>
+        <div class="internship-list">
+          <article class="internship-card">
+            <div class="company-logo">
+              <img src="https://www.alpine.com.cn/static/alpine/assets/images/logo.png" alt="Alpine logo" />
+            </div>
+            <div class="internship-main">
+              <div class="internship-head">
+                <div>
+                  <p>2024.08 - 2024.10</p>
+                  <h3>アルパイン中国・大連研究開発センター</h3>
+                </div>
+                <span>大連 · Android開発エンジニア</span>
+              </div>
+              <p>
+                JavaとGradleで音楽プレーヤーを開発し、ユーザー登録、ログイン、楽曲再生、お気に入り機能を実装。SQLiteでローカルデータを管理し、XMLによる画面作成と操作テストも担当しました。
+              </p>
+            </div>
+          </article>
+          <article class="internship-card">
+            <div class="company-logo">
+              <img
+                src="https://www.bangyan.com.cn/assets/bangyan-logo.svg"
+                alt="邦彦技術のロゴ"
+                onerror="this.hidden = true; this.nextElementSibling.hidden = false;"
+              />
+              <span class="company-logo-fallback" hidden>邦彦技術</span>
+            </div>
+            <div class="internship-main">
+              <div class="internship-head">
+                <div>
+                  <p>2025.04 - 2025.09</p>
+                  <h3>邦彦技術股份有限公司（Bangyan Technology）</h3>
+                </div>
+                <span>深圳 · アルゴリズムエンジニア</span>
+              </div>
+              <p>
+                公開動画データセットからデジタルヒューマン学習用のデータ処理パイプラインを構築。UVR5で音声とBGMを分離し、YOLOで顔検出とデータ選別を行い、Wav2Lipのリップシンク学習用にサーバーへ配置しました。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section-grid">
+        <div class="section-title">
+          <p class="eyebrow">Projects</p>
+          <h2>主なプロジェクト</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p>RAG &amp; Agent</p>
+            <h3>企業製品案内AIエージェント</h3>
+            <span>企業サイト、展示施設、購入前の相談向けにPython・FastAPI・DeepSeekで構築した製品Q&amp;Aアシスタント。PDFの抽出・分割、BGE埋め込み、Chromaへの永続保存、上位5件の検索とCrossEncoderによる再ランキングを経て、ファイル名・ページ番号付きの中国語回答を生成します。意図分類により製品質問、見積もり・デモ予約時の連絡先収集、契約相談の担当者案内を処理。同意を得た連絡先のSQLite保存、文書の自動読み込み、重複排除、文字化け対策、CSVによる意図分類評価にも対応しています。</span>
+          </article>
+          <article class="project-card">
+            <p>RoboCup</p>
+            <h3>
+              <a href="https://github.com/SuhangXia/robocup_ur5e" target="_blank" rel="noreferrer">
+                RoboCup UR5e Object Sorting System
+              </a>
+            </h3>
+            <span>有限状態機械で卓上のYCB物体検出、3D位置・把持推定、障害物回避を伴う経路計画、UR5e制御を連携させ、色別の仕分けを実現するシステムです。私は<code>perception_yolo</code>を担当し、YOLOv26による物体検出、YCB分類、色認識、3D位置推定、スコア付与を実装。GraspNet、MoveIt、実行モジュールへ知覚情報を提供しました。</span>
+          </article>
+          <article class="project-card">
+            <p>Graph Neural Network</p>
+            <h3>スケッチ認識</h3>
+            <span>QuickDrawデータセットを用いたGNNベースのスケッチ認識を開発。実現可能性の分析、モデル学習、デモ、最終発表に参加し、成果はICAIC 2024で発表されました。</span>
+          </article>
+          <article class="project-card">
+            <p>Computer Vision</p>
+            <h3>物体検出</h3>
+            <span>チームリーダーとしてPythonとYOLOによる物体検出プロジェクトを推進。物体認識、精度評価、最終デモを実施しました。</span>
+          </article>
+          <article class="project-card">
+            <p>Robotics Perception</p>
+            <h3>製造業向け協働ロボットの知覚アルゴリズム</h3>
+            <span>産業動作認識のための30クラス動画分類タスクを構築。C3D_Liteを基にC3D_Lite_V2を開発し、注意機構と多層分類ヘッドを導入して性能向上に取り組みました。</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="timeline-section">
+        <div class="section-title">
+          <p class="eyebrow">Education & Awards</p>
+          <h2>学歴・受賞歴</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <time>2020-2025</time>
+            <h3>大連交通大学</h3>
+            <p>ソフトウェア工学・英語を専攻。専攻内順位は上位10%、GPAは85.5。学内の一等・三等奨学金を受給しました。</p>
+          </article>
+          <article>
+            <time>2025-2026</time>
+            <h3>キングス・カレッジ・ロンドン（KCL）</h3>
+            <p>ロボティクス修士課程。ロボットの知覚、知能システム、AIアルゴリズムを中心に学んでいます。</p>
+          </article>
+          <article>
+            <time>Awards</time>
+            <h3>受賞・推薦</h3>
+            <p>第9回遼寧省「インターネット＋」大学生イノベーション・起業コンテストで省銀賞、遼寧省iTeachデジタル教育応用イノベーションコンテストで省優秀賞を受賞。中国科学院および香港科技大学の教授から推薦状をいただきました。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="life" class="life-section">
+        <div class="section-title">
+          <p class="eyebrow">Life</p>
+          <h2>日常のひとこま</h2>
+        </div>
+        <div class="life-grid">
+          <article>
+            <span>01</span>
+            <h3>大連からロンドンへ</h3>
+            <p>大連でソフトウェア工学と英語を学び、ロンドンでロボティクスの研究へ。異なる文化の中で学び、探究を続けています。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>言葉とコミュニケーション</h3>
+            <p>英語専攻での学びとIELTS 7.0の語学力を生かし、技術の説明、チームワーク、言語を越えた対話を大切にしています。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>技術の外にあるもの</h3>
+            <p>街を観察し、日々の暮らしを記録することが好きです。工学の学びとともに、感性や表現、継続的な成長も大切にしています。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="photography" class="photography-section" aria-labelledby="photography-title">
+        <div class="section-title">
+          <p class="eyebrow">Photography</p>
+          <h2 id="photography-title">フォトギャラリー</h2>
+        </div>
+        <div class="gallery-toolbar">
+          <p>旅先の光と影、日常の瞬間をレンズに収めて。</p>
+          <button class="secondary-action gallery-toggle" type="button" aria-pressed="false">再生を一時停止</button>
+        </div>
+        <div class="gallery-viewport" tabindex="0" role="region" aria-label="写真のカルーセル。マウスを重ねるかフォーカスするとゆっくり停止します。左右にスワイプして閲覧できます。">
+          <div class="gallery-track"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>一緒に新しいものをつくりましょう</h2>
+          <p>メール：otisliu921@gmail.com</p>
+        </div>
+        <a class="primary-action" href="mailto:otisliu921@gmail.com">otisliu921@gmail.com</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 劉発展</span>
+      <span>Robotics · AI · Software Engineering</span>
+    </footer>
+
+    <script src="script.js?v=20261016-four-languages"></script>
+  </body>
+</html>

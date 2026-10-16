@@ -1,5 +1,12 @@
 (() => {
   const root = document.documentElement;
+  const labelsByLanguage = {
+    zh: { light: "白天模式", dark: "黑夜模式", lightAction: "切换到白天模式", darkAction: "切换到黑夜模式" },
+    en: { light: "Light mode", dark: "Dark mode", lightAction: "Switch to light mode", darkAction: "Switch to dark mode" },
+    ko: { light: "라이트 모드", dark: "다크 모드", lightAction: "라이트 모드로 전환", darkAction: "다크 모드로 전환" },
+    ja: { light: "ライトモード", dark: "ダークモード", lightAction: "ライトモードに切り替え", darkAction: "ダークモードに切り替え" },
+  };
+  const labels = labelsByLanguage[root.lang.split("-")[0]] || labelsByLanguage.zh;
   const preference = window.matchMedia("(prefers-color-scheme: dark)");
   let savedTheme = null;
   try {
@@ -15,9 +22,9 @@
     if (!button) return;
     const dark = theme === "dark";
     button.setAttribute("aria-pressed", String(dark));
-    button.setAttribute("aria-label", dark ? "切换到白天模式" : "切换到黑夜模式");
+    button.setAttribute("aria-label", dark ? labels.lightAction : labels.darkAction);
     button.querySelector(".theme-toggle-icon").textContent = dark ? "☀" : "☾";
-    button.querySelector(".theme-toggle-label").textContent = dark ? "白天模式" : "黑夜模式";
+    button.querySelector(".theme-toggle-label").textContent = dark ? labels.light : labels.dark;
   }
 
   // Apply before the stylesheet loads to prevent a flash of the wrong theme.

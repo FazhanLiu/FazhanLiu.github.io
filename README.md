@@ -40,7 +40,10 @@ python3 -m http.server 5173
 
 ```text
 .
-├── index.html           # 首页内容与项目介绍
+├── index.html           # 中文首页与项目介绍
+├── en.html              # 英文首页，板块与中文版一致
+├── ja.html              # 日文首页，板块与中文版一致
+├── ko.html              # 韩文首页，板块与中文版一致
 ├── styles.css           # 页面样式与响应式布局
 ├── theme.js             # 主题初始化、切换与偏好保存
 ├── script.js            # 摄影轮播与 Canvas 背景动画
@@ -59,7 +62,8 @@ python3 -m http.server 5173
 - 修改 `theme.js` 调整主题切换和偏好保存逻辑；两套主题的配色变量位于 `styles.css`。
 - 图片可放入 `assets/`，并在 HTML 中使用相对路径引用。
 - 邦彦 logo 使用官网当前的 SVG 地址，加载失败时显示「邦彦技术」文字；其他外部图片与 Google Fonts 的加载也取决于网络和来源网站的可用性。
-- 导航中预留了英文、日文入口；当前仓库尚未包含 `en.html` 和 `ja.html`。
+- 中文首页为 `index.html`，英文首页为 `en.html`，日文首页为 `ja.html`，韩文首页为 `ko.html`；顶部语言按钮可在四种语言之间切换。
+- 修改内容时请同步更新中、英、日、韩四个页面，较长的外语介绍可以适当精简。四个页面共用样式、13 张照片和交互脚本；照片英文标题与替代文字使用 `titleEn`、`altEn`，日文使用 `titleJa`、`altJa`，韩文使用 `titleKo`、`altKo`，均在 `script.js` 中维护。轮播和主题按钮会根据页面语言自动显示，并共享主题偏好。
 
 ## 摄影集维护
 
