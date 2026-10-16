@@ -511,6 +511,12 @@ h3 {
   object-fit: contain;
 }
 
+.company-logo-fallback {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .internship-main {
   display: grid;
   gap: 12px;

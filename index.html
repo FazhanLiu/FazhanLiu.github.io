@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260524-language-switch" />
+    <link rel="stylesheet" href="styles.css?v=20261016-project-update" />
   </head>
   <body>
     <canvas id="signal-field" aria-hidden="true"></canvas>
@@ -134,14 +134,14 @@
             <ul>
               <li><span style="--value: 88%"></span>Java / Android / Gradle</li>
               <li><span style="--value: 84%"></span>HTML / CSS / JavaScript / Vue</li>
-              <li><span style="--value: 78%"></span>C / SQLite / XML Layout</li>
+              <li><span style="--value: 78%"></span>Python / FastAPI / SQLite / C</li>
             </ul>
           </div>
           <div class="skill-panel">
             <h3>AI 与语言能力</h3>
             <ul>
               <li><span style="--value: 86%"></span>YOLO / GNN / C3D / Wav2Lip</li>
-              <li><span style="--value: 82%"></span>数据处理与模型训练</li>
+              <li><span style="--value: 82%"></span>RAG / BGE / ChromaDB / DeepSeek</li>
               <li><span style="--value: 92%"></span>英语 CET-4/6 · TEM-4/8 · IELTS 7.0</li>
             </ul>
           </div>
@@ -178,7 +178,12 @@
           </article>
           <article class="internship-card">
             <div class="company-logo">
-              <img src="https://www.bangyan.com.cn/uploads/202602/699d40d126973.png" alt="邦彦技术 logo" />
+              <img
+                src="https://www.bangyan.com.cn/assets/bangyan-logo.svg"
+                alt="邦彦技术 logo"
+                onerror="this.hidden = true; this.nextElementSibling.hidden = false;"
+              />
+              <span class="company-logo-fallback" hidden>邦彦技术</span>
             </div>
             <div class="internship-main">
               <div class="internship-head">
@@ -202,6 +207,11 @@
           <h2>代表项目</h2>
         </div>
         <div class="project-grid">
+          <article class="project-card">
+            <p>RAG &amp; Agent</p>
+            <h3>企业产品智能讲解 Agent</h3>
+            <span>面向企业官网、展厅与售前咨询场景，基于 Python、FastAPI 和 DeepSeek 构建产品知识问答助手。支持 PDF 上传、分页提取与递归切分，通过 BGE 中文 Embedding、Chroma 持久化向量库和 Top5 检索，结合 BGE CrossEncoder 重排生成带文件名、页码引用的中文回答。通过意图识别编排产品答疑、询价与预约留资、合同类问题转人工建议；留资经客户同意提交后保存至 SQLite。实现文档持久保存与自动加载、重复上传去重、中文乱码处理，并提供 CSV 意图评测脚本。</span>
+          </article>
           <article class="project-card">
             <p>RoboCup</p>
             <h3>
